@@ -62,23 +62,41 @@ The result: a proof of concept showing that even a modestly-accurate model (~63%
 ⚙️ 𝐌𝐋 𝐏𝐢𝐩𝐞𝐥𝐢𝐧𝐞
 
 📥 Data Ingestion
+
    ↓
+
 🔗 Merge (Customer_ID inner join)
+
    ↓
+
 🕵️ Automated Churn-Column Detection
+
    ↓
+
 🧼 Cleaning (median imputation + label encoding)
+
    ↓
+
 ✂️ High-Cardinality Feature Removal (>95% uniqueness)
+
    ↓
+
 📊 Stratified 80/20 Train-Test Split
+
    ↓
+
 ⚗️ SMOTE Oversampling (training set ONLY — no leakage)
+
    ↓
+
 🤖 Model Training (Random Forest + XGBoost)
+
    ↓
+
 🎚️ Dynamic Threshold Optimization
+
    ↓
+
 💵 Financial ROI Simulation
 
 ⚠️ 𝐍𝐨 𝐝𝐚𝐭𝐚 𝐥𝐞𝐚𝐤𝐚𝐠𝐞: SMOTE and all preprocessing steps are fit exclusively on training data, then applied to the test set — ensuring reported performance is realistic.
@@ -178,10 +196,15 @@ Future feature expansion (network quality, service logs, real-time behavior) is 
 🛠️ 𝐓𝐞𝐜𝐡 𝐒𝐭𝐚𝐜𝐤
 
 🐍 Python
+
 🐼 Pandas / NumPy — data processing
+
 🌲 Scikit-learn — Random Forest, preprocessing, metrics
+
 🚀 XGBoost — gradient boosted trees
+
 ⚗️ imbalanced-learn (SMOTE) — class balancing
+
 📊 Matplotlib / Seaborn — visualization
 
 ──────────────────────────────
@@ -195,6 +218,21 @@ Hosted by Ivan Franko National University of Lviv
 
 📬 𝐂𝐨𝐧𝐭𝐚𝐜𝐭
 
-For questions, collaboration, or pilot deployment discussions, feel free to reach out to the authors.
+For questions, collaboration, or pilot deployment discussions, feel free to reach out to us:
+
+**Adityabaan Tripathy**  
+Email: adityabaant@gmail.com 
+[GitHub]([https://github.com/Adityabaan]) | [LinkedIn](https://www.linkedin.com/in/adityabaan-tripathy-6b245323b/)
+
+**Shubhayu Kundu**  
+Email: shubhayu15@gmail.com 
+[GitHub]([https://github.com/Shubhayu15]) | [LinkedIn](https://www.linkedin.com/in/shubhayu-kundu-7441ba295/)
+
+──────────────────────────────
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 ⭐ If you found this project useful or interesting, consider starring the repository!
