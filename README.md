@@ -6,11 +6,20 @@
 
 🏆 𝐓𝐡𝐢𝐬 𝐩𝐫𝐨𝐣𝐞𝐜𝐭 𝐰𝐚𝐬 𝐬𝐮𝐛𝐦𝐢𝐭𝐭𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐂𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐨𝐧 𝐚𝐭 𝐭𝐡𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐈𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 𝐒𝐮𝐦𝐦𝐞𝐫 𝐒𝐜𝐡𝐨𝐨𝐥 (𝐀𝐈𝐓𝐬𝐬) 𝟐𝟎𝟐𝟔, 𝐡𝐨𝐬𝐭𝐞𝐝 𝐛𝐲 𝐈𝐯𝐚𝐧 𝐅𝐫𝐚𝐧𝐤𝐨 𝐍𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 𝐨𝐟 𝐋𝐯𝐢𝐯 — 𝐚𝐧𝐝 𝐰𝐨𝐧 🥉 𝐓𝐡𝐢𝐫𝐝 𝐏𝐥𝐚𝐜𝐞.
 
+<table>
+  <tr>
+    <td><img src="https://github.com/Adityabaan/T.E.L.E.R.E.T.A.I.N-AI/blob/6c51a482218bdf513141cc313e840b279e905ef6/Img1.png" width="500"></td>
+    <td><img src="https://github.com/Adityabaan/T.E.L.E.R.E.T.A.I.N-AI/blob/6c51a482218bdf513141cc313e840b279e905ef6/Img2.jpg" width="500"></td>
+  </tr>
+</table>
+
+
 ──────────────────────────────
 
 👥 𝐀𝐮𝐭𝐡𝐨𝐫𝐬
 
 • 𝐀𝐝𝐢𝐭𝐲𝐚𝐛𝐚𝐚𝐧 𝐓𝐫𝐢𝐩𝐚𝐭𝐡𝐲 — SRM Institute of Science and Technology, Chennai, India
+
 • 𝐒𝐡𝐮𝐛𝐡𝐚𝐲𝐮 𝐊𝐮𝐧𝐝𝐮 — SRM Institute of Science and Technology, Chennai, India
 
 ──────────────────────────────
@@ -41,6 +50,7 @@ The result: a proof of concept showing that even a modestly-accurate model (~63%
 🗂️ 𝐃𝐚𝐭𝐚𝐬𝐞𝐭
 
 𝐂𝐥𝐢𝐞𝐧𝐭.𝐜𝐬𝐯 — 100,000 rows × 50 columns — account-level data (tenure, plan, demographics, equipment)
+
 𝐑𝐞𝐜𝐨𝐫𝐝.𝐜𝐬𝐯 — 100,000 rows × 51 columns — usage, billing, call quality, churn label
 
 🔗 Merged on Customer_ID via inner join → 𝟏𝟎𝟎,𝟎𝟎𝟎 𝐫𝐨𝐰𝐬 × 𝟏𝟎𝟎 𝐜𝐨𝐥𝐮𝐦𝐧𝐬, zero rows lost
@@ -52,15 +62,24 @@ The result: a proof of concept showing that even a modestly-accurate model (~63%
 ⚙️ 𝐌𝐋 𝐏𝐢𝐩𝐞𝐥𝐢𝐧𝐞
 
 📥 Data Ingestion
-→ 🔗 Merge (Customer_ID inner join)
-→ 🕵️ Automated Churn-Column Detection
-→ 🧼 Cleaning (median imputation + label encoding)
-→ ✂️ High-Cardinality Feature Removal (>95% uniqueness)
-→ 📊 Stratified 80/20 Train-Test Split
-→ ⚗️ SMOTE Oversampling (training set ONLY — no leakage)
-→ 🤖 Model Training (Random Forest + XGBoost)
-→ 🎚️ Dynamic Threshold Optimization
-→ 💵 Financial ROI Simulation
+   ↓
+🔗 Merge (Customer_ID inner join)
+   ↓
+🕵️ Automated Churn-Column Detection
+   ↓
+🧼 Cleaning (median imputation + label encoding)
+   ↓
+✂️ High-Cardinality Feature Removal (>95% uniqueness)
+   ↓
+📊 Stratified 80/20 Train-Test Split
+   ↓
+⚗️ SMOTE Oversampling (training set ONLY — no leakage)
+   ↓
+🤖 Model Training (Random Forest + XGBoost)
+   ↓
+🎚️ Dynamic Threshold Optimization
+   ↓
+💵 Financial ROI Simulation
 
 ⚠️ 𝐍𝐨 𝐝𝐚𝐭𝐚 𝐥𝐞𝐚𝐤𝐚𝐠𝐞: SMOTE and all preprocessing steps are fit exclusively on training data, then applied to the test set — ensuring reported performance is realistic.
 
@@ -151,6 +170,7 @@ Future feature expansion (network quality, service logs, real-time behavior) is 
 📁 𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐲 𝐂𝐨𝐧𝐭𝐞𝐧𝐭𝐬
 
 📓 TELERETAIN_AI_poc.ipynb — full source code: data pipeline, EDA, modeling, and ROI simulation
+
 🖥️ T_E_L_E_R_E_T_A_I_N__AI___Telecom_Churn_Prediction___ROI-Optimized_Retention.pptx — competition presentation deck
 
 ──────────────────────────────
